@@ -34,7 +34,7 @@ const Hero = () => {
 
                         <div >
                             <div >
-                                <h1 className='text-h1 pb-10 md:max-w-[60vw]'>Sriram Prashant <br /> Data analyst </h1>
+                                <h1 className='text-h1 pb-10 md:max-w-[60vw]'>Sathvik Katam <br /> Data and ML expert </h1>
                             </div>
 
                             <p className='text-ingress md:max-w-[60vw] xl:max-w-[35vw] mb-16'> Curiosity reduced Paul's fear to a manageable level.
