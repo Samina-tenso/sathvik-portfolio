@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="py-24 bottom-0 static">
             <ul className="flex space-x-10">
                 <li>
-                    <CustomLink url={'https://www.linkedin.com/feed/'} label={'Linkedin'} />
+                    <CustomLink url={'https://www.linkedin.com/in/sathvik-katam/'} label={'Linkedin'} />
 
                 </li>
                 <li>
@@ -13,7 +13,7 @@ const Footer = () => {
 
                 </li>
                 <li>
-                    <CustomLink url={'mailto:sammique95@gmail.com'} label={'preshant@gmail.com'} />
+                    <CustomLink url={'mailto:sathvik.katam@gmail.com'} label={'Email'} />
                 </li>
             </ul>
         </div >
