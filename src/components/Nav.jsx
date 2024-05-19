@@ -11,7 +11,7 @@ const Nav = () => {
     const navLinks = [['Home', '/'], ['About', '/about']];
 
     return (
-        <nav className='sticky top-0 bg-blue-700 '>
+        <nav className='sticky top-0 bg-blue-700 px-6 md:px-16 xl:px-[10vw] '>
             <ul className=' flex flex-row py-10 text-ingress space-x-10 px-10 text-a'>
 
                 {

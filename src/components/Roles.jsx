@@ -2,8 +2,8 @@ import React from "react";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { motion } from 'framer-motion'
-import experiences from '../assets/experience.json'
-import Experience from "./Experience";
+import roles from '../assets/roles.json'
+import Role from "./Role";
 const Experiences = () => {
 
     const ref = useRef(null)
@@ -26,8 +26,8 @@ const Experiences = () => {
 
 
     return (
-        <section id='experiences' className="py-24 " >
-            <h4 className='text-h3 md:mr-auto pb-4 opacity-80'>Previous Roles</h4>
+        <section id='roles  ' className="py-24 px-6 md:px-16 xl:px-[10vw] bg-forest text-beige" >
+            <h4 className='text-h4 md:mr-auto pb-4 opacity-80'>Previous Roles</h4>
             <motion.ul
                 variants={listVariants}
                 ref={ref}
@@ -35,9 +35,9 @@ const Experiences = () => {
                 initial="hidden"
                 animate={isInView ? "enter" : "hidden"}
                 className="flex flex-col space-y-10 " >
-                {experiences.map((e, i) => (
-                    <motion.li key={i} variants={item} className=" md:ml-auto md:max-w-[60vw] flex items-top md:items-center border-amber-100 border-t-2 first:border-0 py-10 first:pt-0 ">
-                        <Experience {...e} />
+                {roles.map((e, i) => (
+                    <motion.li key={i} variants={item} className=" md:ml-auto md:max-w-[60vw] flex items-top md:items-center border-beige/50 border-t-2  first:border-0 py-10 first:pt-0 ">
+                        <Role {...e} />
                     </motion.li>
                 ))}
             </motion.ul>

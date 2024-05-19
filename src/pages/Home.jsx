@@ -1,16 +1,16 @@
 import React from "react"
 import Hero from '../components/Hero'
-import Services from '../components/Services'
+import Expertise from '../components/Expertise'
 import About from "../components/About"
-import Experiences from "../components/Experiences"
+import Roles from "../components/Roles"
 const Home = () => {
 
     return (
         < div className=' text-left max-w-1280'>
             <Hero />
-            <Services />
+            <Expertise />
             <About />
-            <Experiences />
+            <Roles />
         </div>
     )
 }

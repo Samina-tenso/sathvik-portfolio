@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-
+    colors: {
+      blue: '#1d4ed8',
+      amber: '#FEF#C7',
+      forest: '#3c5f45',
+      beige: '#faf8f0'
+    },
     extend: {
       fontSize: {
         'h1': '6.2em',
@@ -18,10 +23,7 @@ export default {
         'par': 'max(1.4rem, 1.111vw)'
       },
 
-      color: {
-        blue: '#1d4ed8',
-        amber: '#FEF#C7'
-      }
+
     },
   },
   plugins: [],

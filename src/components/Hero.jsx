@@ -16,41 +16,45 @@ const Hero = () => {
             transition: { duration: 1 },
             ease: 'easeIn',
         },
-        hidden: { opacity: 0, y: 200 },
+        hidden: { opacity: 0, y: 80 },
     }
 
     return (
 
 
-        <div ref={ref}>
+        <section id="hero" className='bg-beige text-forest px-6 md:px-16 xl:px-[10vw]  ' ref={ref}>
             <AnimatePresence>
                 {isInView && (
-                    <motion.div key="hero"
-                        variants={listVariants}
-                        initial="hidden"
-                        animate={isInView ? "enter" : "hidden"} className=' pb-40 pt-30 flex flex-col items-center justify-center border-b-2 border-opacity-60 border-amber-100'
-
+                    <div
+                        className=' pb-40 pt-30 flex flex-col  '
                     >
                         <div >
                             <div >
-                                <h1 className='text-h1 pb-10 md:max-w-[60vw]'>Sathvik Katam <br /> Data and ML expert </h1>
+                                <motion.h1
+                                    key="heroText"
+                                    variants={listVariants}
+                                    initial="hidden"
+                                    animate={isInView ? "enter" : "hidden"} className='text-h1 font-semibold py-10 md:max-w-[70vw]'>Sathvik Katam <br /> Data and ML expert </motion.h1>
                             </div>
 
-                            <p className='text-ingress md:max-w-[60vw] xl:max-w-[35vw] mb-16'>
+                            <p className='text-ingress md:max-w-[50vw]  mb-10'>
                                 Are you seeking a professional to drive transformative projects in machine learning and data engineering?
+                            </p>
+                            <p className='text-ingress md:max-w-[50vw]  mb-16'>
+
                                 With over 8 years of hands-on experience, I bring a proven track record of architecting cutting-edge solutions that harness the power of massive datasets and state-of-the-art machine learning algorithms.
                             </p>
-                            <Button url={'mailto:sathvik.katam@gmail.com'} text={'Mail'} bgColor={'#FEF3C7'} textColor={'#1d4ed8'} />
-                            <Button url={'tel:+46722324382'} text={'Tel'} bgColor={'#FEF3C7'} textColor={'#1d4ed8'} />
+                            <Button url={'mailto:sathvik.katam@gmail.com'} text={'sathvik.katam@gmail.com'} bgColor={'#3c5f45'} textColor={'beige'} />
+
                         </div>
-                    </motion.div >
+                    </div >
 
                 )
 
                 }
 
             </AnimatePresence >
-        </div>
+        </section>
 
     )
 }
