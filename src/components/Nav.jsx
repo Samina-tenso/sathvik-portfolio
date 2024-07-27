@@ -3,26 +3,28 @@ import { Link, NavLink } from "react-router-dom";
 import Blog from '../pages/Blog'
 import Home from '../pages/Home';
 import About from './About';
-import url from '../assets/images/profile.jpg'
 import Profile from './Profile';
 
 
 const Nav = () => {
-    const navLinks = [['Home', '/'], ['About', '/about']];
+    const navLinks = [['Home', '/'], ['Blog', '/blog']];
 
     return (
-        <nav className='sticky top-0 bg-blue-700 px-6 md:px-16 xl:px-[10vw] '>
-            <ul className=' flex flex-row py-10 text-ingress space-x-10 px-10 text-a'>
+        <nav className='sticky pt-6 text-realBlack bg-offWhite px-6 md:px-4 xl:px-[2vw] '>
+            <ul className='flex flex-row py-6 text-ingress justify-end space-x-4 px-10 '>
 
                 {
                     navLinks.map(([pathname, url]) => (
-                        <li >
+                        <li className='space-x-2'>
                             <NavLink to={url} className={({ isActive }) => {
-                                return isActive ? 'py-2 relative after:bg-amber-100 after:absolute after:h-[0.2rem] after:bottom-0 after:left-0 after:w-full' : 'py-2 relative after:bg-amber-100 after:absolute after:h-[0.2rem] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
-                            }}>{pathname}</NavLink>
+                                return isActive ? 'py-2 relative after:bg-realBlack after:absolute after:h-[0.2rem] after:bottom-0 after:left-0 after:w-full' : 'py-2 relative after:realBlack after:absolute after:h-[0.2rem] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'
+                            }}>{pathname} </NavLink>
+
                         </li>
+
                     ))
                 }
+
             </ul>
         </nav>
     )

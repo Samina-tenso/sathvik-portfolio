@@ -26,8 +26,8 @@ const Experiences = () => {
 
 
     return (
-        <section id='roles  ' className="py-24 px-6 md:px-16 xl:px-[10vw] bg-forest text-beige" >
-            <h4 className='text-h4 md:mr-auto pb-4 opacity-80'>Previous Roles</h4>
+        <section id='roles' className="py-24 px-4 md:px-16 " >
+            <h4 className='text-h4 pb-10 font-light text-orange '>Previous Roles.</h4>
             <motion.ul
                 variants={listVariants}
                 ref={ref}
@@ -36,7 +36,7 @@ const Experiences = () => {
                 animate={isInView ? "enter" : "hidden"}
                 className="flex flex-col space-y-10 " >
                 {roles.map((e, i) => (
-                    <motion.li key={i} variants={item} className=" md:ml-auto md:max-w-[60vw] flex items-top md:items-center border-beige/50 border-t-2  first:border-0 py-10 first:pt-0 ">
+                    <motion.li key={i} variants={item} >
                         <Role {...e} />
                     </motion.li>
                 ))}

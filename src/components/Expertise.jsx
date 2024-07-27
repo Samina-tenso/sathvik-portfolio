@@ -5,15 +5,18 @@ import { motion, AnimatePresence, stagger } from "framer-motion"
 import { useInView } from "framer-motion";
 import Button from './Button';
 import { useRef } from "react";
+import { inView } from 'motion';
 const Expertise = () => {
 
+
+    // console.log(isInView)
     return (
-        <section id="expertise " className=' px-6 md:px-16 xl:px-[10vw] py-14 bg-forest text-beige '>
-            <h4 className='text-h4 pb-10 opacity-50'>Expertise</h4>
+        <section id="expertise" className=' px-4 md:px-16 py-24 '>
+            <h4 className='text-h4  font-light text-orange '>Expertise.</h4>
             <ul
-                className='text-left '>
+                className='text-left grid grid-flow-rows gap-y-32 '>
                 {data.map((d, index) => (
-                    <li className=' border-t-2  pt-10 border-beige/50  first:border-0 first:pt-0' key={index}><Card {...d} /></li>
+                    <li key={index}><Card {...d} /* inView={isInView}*/ /></li>
                 ))}
             </ul>
 

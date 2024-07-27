@@ -16,7 +16,8 @@ function App() {
       children: [
         {
           path: "/",
-          element: <Home />
+          element: <Home />,
+
         },
         {
           path: "blog",
@@ -28,10 +29,7 @@ function App() {
           //   }
           // ]
         },
-        {
-          path: "about",
-          element: <About />
-        },
+
       ]
     }
   ])

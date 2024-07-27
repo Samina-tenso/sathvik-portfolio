@@ -12,42 +12,43 @@ const Hero = () => {
     const listVariants = {
         enter: {
             opacity: 1,
-            y: 0,
+            y: -10,
             transition: { duration: 1 },
             ease: 'easeIn',
         },
-        hidden: { opacity: 0, y: 80 },
+        hidden: { opacity: 0, y: 10 },
     }
 
     return (
 
 
-        <section id="hero" className='bg-beige text-forest px-6 md:px-16 xl:px-[10vw]  ' ref={ref}>
+        <section id="hero" ref={ref} className=' px-4 md:px-16 py-24  bg-offWhite text-realBlack'>
             <AnimatePresence>
                 {isInView && (
-                    <div
-                        className=' pb-40 pt-30 flex flex-col  '
-                    >
+
+                    <div >
                         <div >
-                            <div >
-                                <motion.h1
-                                    key="heroText"
-                                    variants={listVariants}
-                                    initial="hidden"
-                                    animate={isInView ? "enter" : "hidden"} className='text-h1 font-semibold py-10 md:max-w-[70vw]'>Sathvik Katam <br /> Data and ML expert </motion.h1>
-                            </div>
-
-                            <p className='text-ingress md:max-w-[50vw]  mb-10'>
-                                Are you seeking a professional to drive transformative projects in machine learning and data engineering?
-                            </p>
-                            <p className='text-ingress md:max-w-[50vw]  mb-16'>
-
-                                With over 8 years of hands-on experience, I bring a proven track record of architecting cutting-edge solutions that harness the power of massive datasets and state-of-the-art machine learning algorithms.
-                            </p>
-                            <Button url={'mailto:sathvik.katam@gmail.com'} text={'sathvik.katam@gmail.com'} bgColor={'#3c5f45'} textColor={'beige'} />
+                            <motion.h1
+                                key="heroText"
+                                variants={listVariants}
+                                initial="hidden"
+                                animate={isInView ? "enter" : "hidden"} className='text-h1 '>Samina Dahlberg </motion.h1>
 
                         </div>
-                    </div >
+                        <div className='grid grid-cols-1  md:grid-cols-2 md:gap-16 pt-10'>
+                            <div className='flex text-orange pb-4 md:justify-end md:pb-0'>
+
+                                <p>Frontend and Design </p>
+
+                            </div>
+                            <div className='flex flex-col'>
+                                <p className='text-ingress font-light mb-10'>
+                                    I'm a frontend developer with a strong interest in web design.
+                                </p>
+                                <Button url={'mailto:sathvik.katam@gmail.com'} text={" Connect with me"} />
+                            </div>
+                        </div>
+                    </div>
 
                 )
 

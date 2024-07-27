@@ -3,10 +3,11 @@ import Hero from '../components/Hero'
 import Expertise from '../components/Expertise'
 import About from "../components/About"
 import Roles from "../components/Roles"
+
 const Home = () => {
 
     return (
-        < div className=' text-left max-w-1280'>
+        < div className=' grid  grid-flow-row  text-left max-w-1280'>
             <Hero />
             <Expertise />
             <About />

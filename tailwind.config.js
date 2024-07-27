@@ -9,18 +9,23 @@ export default {
       blue: '#1d4ed8',
       amber: '#FEF#C7',
       forest: '#3c5f45',
-      beige: '#faf8f0'
+      beige: '#FEFDED',
+      leaf: '#c4d6c6',
+      orange: '#FF204E',
+      realBlack: '#1A1A1A',
+      offWhite: '#f2f2f2'
     },
     extend: {
       fontSize: {
-        'h1': '6.2em',
-        'h2': 'max(4.2rem, 4.2vw)',
-        'h3': 'max(2rem, 2.222vw)',
-        'h4': '1.6em',
-        'ingress': '1.8em',
-        'a': '1.2em',
-        'button': '1.4em',
-        'par': 'max(1.4rem, 1.111vw)'
+        'h1': 'calc(56px + 4vw)',
+        'h2': 'calc(40px + 1vw)',
+        'h3': 'calc(28px + 1vw)',
+        'h4': 'calc(16px + 1vw)',
+        'ingress': '1.5rem',
+        'a': 'calc(18px + 1vw)',
+        'button': 'calc(16px + 1vw)',
+        'par': '1.2rem',
+        'detail': '1rem'
       },
 
 

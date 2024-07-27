@@ -4,8 +4,8 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 const Layout = () => {
     return (
-        <div>
-            <Nav />
+        <div className='grid grid  grid-flow-row bg-offWhite  min-x-[320px]'>
+
             <Outlet />
             <Footer />
         </div>
